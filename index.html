@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FiscalQuest Backup: integração pessoal de backups criptografados de dados de estudo com o Google Drive.">
+  <meta name="robots" content="index,follow">
+  <title>FiscalQuest Backup — Integração pessoal de backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="./" aria-label="FiscalQuest Backup, início"><span class="brand-mark">FQ</span><span>FiscalQuest <strong>Backup</strong></span></a>
+      <nav aria-label="Navegação principal"><a class="active" href="./" aria-current="page">Início</a><a href="privacidade.html">Privacidade</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">INTEGRAÇÃO PESSOAL · GOOGLE DRIVE</div>
+      <h1>Uma cópia segura para continuar de onde parei.</h1>
+      <p class="lead">FiscalQuest Backup é uma configuração de uso pessoal para preservar cópias de segurança do progresso de estudos do FiscalQuest, utilizando o <strong>Google Drive</strong> como armazenamento externo.</p>
+      <div class="actions"><a class="primary" href="privacidade.html">Como os dados são protegidos <span aria-hidden="true">→</span></a></div>
+      <p class="muted status">Integração de uso individual em preparação. Este site é informativo: não recebe login do Google nem arquivos de backup.</p>
+    </section>
+    <section class="container content-section" aria-labelledby="como-funciona">
+      <div class="section-heading"><span class="eyebrow">FUNCIONAMENTO</span><h2 id="como-funciona">O caminho dos dados</h2></div>
+      <div class="cards">
+        <article class="card"><div class="step">01</div><h3>Cópia local</h3><p>O computador que executa o FiscalQuest gera cópias do banco de dados e dos arquivos associados às questões.</p></article>
+        <article class="card"><div class="step">02</div><h3>Criptografia</h3><p>A configuração planejada utiliza o <em>rclone crypt</em> para criptografar o conteúdo e os nomes dos arquivos antes do envio.</p></article>
+        <article class="card"><div class="step">03</div><h3>Armazenamento externo</h3><p>As cópias criptografadas são enviadas a uma pasta do Google Drive controlada pelo titular da conta.</p></article>
+      </div>
+    </section>
+    <section class="container content-section narrow" aria-labelledby="acesso-google">
+      <div class="section-heading"><span class="eyebrow">ACESSO À CONTA</span><h2 id="acesso-google">Por que solicitar permissão ao Google?</h2></div>
+      <p>A autorização OAuth permite que o <strong>rclone</strong>, executado no computador do proprietário, crie e gerencie os arquivos de backup no Google Drive. A integração foi projetada para utilizar o escopo <code>drive.file</code>, limitado aos arquivos autorizados ou criados pelo aplicativo, sem solicitar acesso irrestrito a todo o Drive.</p>
+      <p>Esta página pública não hospeda os backups, não executa autenticação OAuth e não precisa receber seus dados pessoais.</p>
+      <p>Veja a <a href="privacidade.html">Política de Privacidade</a> para saber como os dados são acessados, utilizados, armazenados e excluídos.</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>FiscalQuest Backup · Uso pessoal</span><a href="privacidade.html">Política de Privacidade</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do FiscalQuest Backup, integração pessoal com Google Drive e rclone.">
+  <title>Política de Privacidade — FiscalQuest Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-content"><a class="brand" href="./"><span class="brand-mark">FQ</span><span>FiscalQuest <strong>Backup</strong></span></a><nav aria-label="Navegação principal"><a href="./">Início</a><a class="active" href="privacidade.html" aria-current="page">Privacidade</a></nav></div></header>
+  <main class="container policy">
+    <div class="eyebrow">TRANSPARÊNCIA E SEGURANÇA</div>
+    <h1>Política de Privacidade</h1>
+    <p class="lead">Esta política descreve a integração pessoal <strong>FiscalQuest Backup</strong>, desenvolvida para preservar dados de estudo no Google Drive utilizando o rclone.</p>
+    <p class="muted small">Última atualização: 9 de novembro de 2026. A integração de armazenamento remoto está em preparação; as práticas descritas como planejadas dependem de sua ativação.</p>
+    <section><h2>1. Finalidade</h2><p>O FiscalQuest Backup tem a finalidade exclusiva de criar e recuperar cópias de segurança dos dados do FiscalQuest, um aplicativo pessoal de organização de estudos. Não é um serviço público de armazenamento nem oferece acesso a outros usuários.</p></section>
+    <section><h2>2. Dados tratados</h2><p>Os backups podem conter registros de sessões de estudo, progresso por disciplina, questões e respostas, revisões e flashcards, pontuações e arquivos associados às questões. A integração OAuth com o Google Drive é usada para armazenar e recuperar esses backups, não para examinar documentos pessoais não relacionados.</p></section>
+    <section><h2>3. Permissão do Google Drive</h2><p>A configuração planejada utiliza a permissão OAuth <code>https://www.googleapis.com/auth/drive.file</code>, que permite criar e gerenciar arquivos autorizados ou criados pelo aplicativo. A autorização é feita pelo próprio titular da conta Google e pode ser revogada nas configurações de segurança dessa conta.</p></section>
+    <section><h2>4. Armazenamento e criptografia</h2><p>O processamento dos backups ocorre no computador controlado pelo proprietário. O fluxo planejado utiliza <strong>rclone crypt</strong> para criptografar o conteúdo e os nomes dos arquivos antes do upload ao Google Drive. Os arquivos criptografados são armazenados na conta Google do próprio titular. O Google fornece a infraestrutura de armazenamento e pode tratar metadados técnicos conforme seus próprios termos e políticas.</p><p>As credenciais OAuth e os segredos de criptografia permanecem na configuração privada do computador, não neste site nem em um repositório público. A capacidade de recuperar um backup depende de preservar os segredos de descriptografia.</p></section>
+    <section><h2>5. Compartilhamento e utilização</h2><p>Os backups são destinados exclusivamente à recuperação dos dados do titular. Não há venda de dados, publicidade direcionada ou compartilhamento deliberado com outros usuários. A transferência para o Google Drive ocorre mediante autorização do titular e para essa finalidade específica.</p></section>
+    <section><h2>6. Retenção e exclusão</h2><p>O titular administra os backups locais e remotos, incluindo prazos de retenção, exclusão e restauração. Nenhum prazo automático de exclusão é prometido enquanto a rotina de retenção não estiver configurada. A revogação do acesso OAuth impede novas operações autorizadas, mas não exclui automaticamente todos os arquivos que já estejam armazenados no Drive.</p></section>
+    <section><h2>7. Este site informativo</h2><p>Este site público contém apenas informações sobre a integração. Não possui formulário de login, não recebe arquivos de backup e não utiliza ferramentas próprias de análise de navegação ou publicidade. A infraestrutura do GitHub Pages pode processar dados técnicos de acesso segundo a política de privacidade do GitHub.</p></section>
+    <section><h2>8. Contato e alterações</h2><p>Dúvidas sobre esta integração podem ser encaminhadas pelo <a href="https://github.com/adoroostrabalhosdeandrekkk/fiscalquest-backup-site/issues">repositório público de suporte no GitHub</a>. Não publique tokens, senhas, e-mails privados ou dados de estudo em mensagens públicas. Esta política será atualizada se a finalidade, as permissões ou o fluxo de tratamento de dados forem alterados.</p></section>
+    <div class="policy-bottom"><a class="primary" href="./">← Voltar à página inicial</a></div>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>FiscalQuest Backup · Uso pessoal</span><a href="./">Início</a></div></footer>
+</body>
+</html>
